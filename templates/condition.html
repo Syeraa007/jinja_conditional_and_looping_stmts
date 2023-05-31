@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja Conditions</title>
+</head>
+<body>
+    <center>
+        <h1>Jinja Operational Tags</h1> 
+        <marquee behavior="" direction="">
+                <h2>Conditional Statements</h2>
+        </marquee>
+            
+        <!-- 
+        <h1>If condition</h1>
+            {% if a > 5 %} 
+                Agent {{a}} is greater than 5
+            {% endif %}
+            <hr>
+    
+        <h1>If-else condition</h1>
+            {% if a > b %}
+                <h1>Agent {{a}} is greater than {{b}}</h1>
+            {% else %}
+                <h1>Agent {{b}} is greater than {{a}}</h1>
+            {% endif %}
+            <hr>
+        -->
+
+        <h1>If elif</h1>
+            {% if a > b and a > c %}
+                <h1>A is max</h1>
+            {% elif b > c %}
+                <h1>B is max</h1>
+            {% else %}
+                <h1>C is max</h1>
+            {% endif %}
+            <hr>
+
+        <h1>Nested if</h1>
+            {% if a > b %}
+                {% if a > c %}
+                    <h1>A is max</h1>
+                {% else %}
+                    <h1>C is max</h1>
+                {% endif %}
+            {% else %}
+                {% if b > c %}
+                    <h1>B is max</h1>
+                {% else %}
+                    <h1>C is max</h1>
+                {% endif %}
+            {% endif %}
+        </center>
+</body>
+</html>

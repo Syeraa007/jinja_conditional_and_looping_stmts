@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinja looping</title>
+</head>
+<body>
+    <center>
+        <marquee behavior="" direction=""><h1>Jinja Looping Statements</h1></marquee>
+        <h1>For loop</h1>
+            {% for i in name %}
+                <h1>{{i}}</h1>
+            {% endfor %}
+            <hr>
+
+        <h1>for in if</h1>
+            {% if name %}
+                {% for i in name %}
+                <h1>{{i}}</h1>
+                {% endfor %}
+            {% else %}
+            <h1>Name is empty</h1>
+            {% endif %}    
+    </center>
+</body>
+</html>
